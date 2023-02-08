@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Vidaloka&display=swap');
+@font-face {
+    font-family: SundiaryDemo;
+    src: url(../fonts/SundiaryDemo-2OgdK.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: pink;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: white;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h3 {
+    font-family: 'SundiaryDemo', cursive;
+    font-weight: 100;
+    font-size: 1.75rem;
+}
+
+#hamburger-menu {
+    position: absolute;
+    left: 0;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    margin-right: 0;
+    width: 400px;
+    height: 100vh;
+    padding-top: 40px;
+    padding-left: 30px;
+    display: flex;
+    background-color: white;
+    font-family: 'Vidaloka', serif;
+}
+
+.nav-visible {
+    margin-right: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav li {
+    padding-bottom: 40px;
+    padding-top: 30px;
+    color: black;
+    display: block;
+    border-bottom: 1px solid black;
+}
+
+#close-menu {
+    position: absolute;
+    width: 30px;
+    right: 0;
+}
