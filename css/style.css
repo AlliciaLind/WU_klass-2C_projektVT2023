@@ -11,8 +11,20 @@
 }
 
 body {
-    background-color: pink;
     font-family: 'Roboto', sans-serif;
+}
+
+#main-grid-body {
+    display: grid;
+    grid-template-rows: 100px 90vh 500px 800px 800px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "he"
+    "ma"
+    "po"
+    "ev"
+    "ga"
+    "fo";
 }
 
 header {
@@ -21,6 +33,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    grid-area: he;
 }
 
 header h3 {
@@ -75,4 +88,29 @@ nav li {
     position: absolute;
     width: 30px;
     right: 0;
+}
+
+#main-section {
+    background-color: pink;
+    grid-area: ma;
+}
+
+#popular-now {
+    background-color: white;
+    grid-area: po;
+}
+
+#event {
+    background-color: pink;
+    grid-area: ev;
+}
+
+#gallery {
+    background-color: white;
+    grid-area: ga;
+}
+
+footer {
+    background-color: pink;
+    grid-area: fo;
 }
