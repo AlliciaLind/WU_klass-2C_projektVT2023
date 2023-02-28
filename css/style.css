@@ -24,7 +24,7 @@ body {
 
 #main-grid-body {
     display: grid;
-    grid-template-rows: 100px 90vh 450px 825px 800px 300px;
+    grid-template-rows: 100px 90vh 450px 850px 850px 300px;
     grid-template-columns: 1fr;
     grid-template-areas: 
     "he"
@@ -114,6 +114,12 @@ nav li {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#arrow-down {
+    height: 60px;
+    position: absolute;
+    bottom: 0;
 }
 
 h1, h2 {
@@ -209,13 +215,12 @@ strong {
 
 
 #event {
-    background-color: rgb(255, 255, 255);
     grid-area: ev;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    border-top: 0.5px solid black;
+    padding-top: 30px;
+    background-color: #f7f0eb;
 }
 
 .event {
@@ -223,6 +228,7 @@ strong {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
     margin-right: 40px;
     margin-left: 40px;
     margin-bottom: 30px;
@@ -257,15 +263,75 @@ strong {
 
 
 #gallery {
-    background-color: white;
+    display: flex;
+    flex-direction: column;
     grid-area: ga;
+    align-items: center;
+    padding-top: 40px;
+}
+
+#gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(4, 150px);
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.gallery-picture {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 7px rgba(128, 128, 128, 0.5);
+    border-radius: 5px;
 }
 
 
 
-
-
 footer {
-    background-color: pink;
+    background-color: #f7f0eb;
     grid-area: fo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#social-media-icons {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+#social-media-icons img {
+    margin-right: 5px;
+}
+
+#footer-links {
+    margin-right: 40px;
+    margin-left: 40px;
+    font-family: 'Lora', serif;
+    font-size: 0.8rem;
+}
+
+#footer-links ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+#footer-links ul li {
+    list-style: none;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
