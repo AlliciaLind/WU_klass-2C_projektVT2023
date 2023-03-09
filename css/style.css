@@ -41,6 +41,7 @@ header {
     justify-content: center;
     align-items: center;
     grid-area: he;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 header h3 {
@@ -363,10 +364,85 @@ a {
     row-gap: 20px;
 }
 
-.gallery h2 {
+.gallery h1 {
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 
 .gallery img {
     width: 300px;
+}
+
+
+
+/* Boka event */
+
+#main-grid-body-bokaevent {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 1fr 300px;
+    grid-template-areas: 
+    "he"
+    "ev"
+    "fo";
+}
+
+#book-events {
+    grid-area: ev;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#book-events h1 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.book-events-img {
+    width: 350px;
+    border-radius: 5px;
+}
+
+.offers {
+    display: flex;
+    justify-content: space-around;
+}
+
+.offers ul li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+#left-list {
+    padding-right: 40px;
+}
+
+#right-list {
+    padding-left: 40px;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.event-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 40px;
+    margin-left: 40px
+}
+
+.event-information h2 {
+    margin-bottom: 20px;
+}
+
+.event-information p {
+    line-height: 25px;
+}
+
+#book-events-gallery-button {
+    margin-bottom: 40px;
 }
