@@ -24,7 +24,7 @@ body {
 
 #main-grid-body {
     display: grid;
-    grid-template-rows: 100px 90vh 450px 850px 850px 300px;
+    grid-template-rows: 100px 90vh 450px 925px 850px 300px;
     grid-template-columns: 1fr;
     grid-template-areas: 
     "he"
@@ -42,6 +42,10 @@ header {
     align-items: center;
     grid-area: he;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    transition: 0.2s ease;
 }
 
 header h3 {
@@ -84,7 +88,6 @@ nav ul {
     list-style: none;
     display: flex;
     flex-direction: column;
-    font-size: 1.5rem;
 }
 
 nav a {
@@ -97,6 +100,7 @@ nav li {
     color: black;
     display: block;
     border-bottom: 1px solid black;
+    font-size: 1.5rem;
 }
 
 #close-menu {
@@ -152,6 +156,15 @@ h2 {
     font-size: 1.75rem;
 }
 
+p {
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+li {
+    font-size: 0.9rem;
+}
+
 #title h3 {
     font-weight: 300;
 }
@@ -173,6 +186,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 #popular-now-products {
@@ -222,6 +236,7 @@ strong {
     align-items: center;
     padding-top: 30px;
     background-color: #f7f0eb;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .event {
@@ -234,7 +249,6 @@ strong {
     margin-left: 40px;
     margin-bottom: 30px;
     text-align: center;
-    font-size: 0.9rem;
 }
 
 .event-background-img {
@@ -269,6 +283,7 @@ strong {
     grid-area: ga;
     align-items: center;
     padding-top: 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 #gallery-grid {
@@ -297,6 +312,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
 
 }
 
@@ -362,6 +378,7 @@ a {
     margin-right: 20px;
     margin-left: 20px;
     row-gap: 20px;
+    grid-area: ga;
 }
 
 .gallery h1 {
@@ -396,7 +413,7 @@ a {
 }
 
 #book-events h1 {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     margin-top: 30px;
 }
 
@@ -408,6 +425,7 @@ a {
 .offers {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 30px;
 }
 
 .offers ul li {
@@ -432,17 +450,18 @@ a {
     margin-top: 30px;
     margin-bottom: 30px;
     margin-right: 40px;
-    margin-left: 40px
+    margin-left: 40px;
+    
 }
 
 .event-information h2 {
     margin-bottom: 20px;
 }
 
-.event-information p {
-    line-height: 25px;
+#book-events-gallery-button {
+    margin-bottom: 40px;
 }
 
-#book-events-gallery-button {
+.book-event-now-button {
     margin-bottom: 40px;
 }
