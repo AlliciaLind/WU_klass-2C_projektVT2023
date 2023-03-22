@@ -290,7 +290,7 @@ strong {
     border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-#gallery-grid {
+.gallery-grid {
     display: grid;
     grid-template-columns: repeat(2, 150px);
     grid-template-rows: repeat(4, 150px);
@@ -561,18 +561,27 @@ a {
 
 @media screen and (min-width: 768px) {
     #main-grid-body {
-        grid-template-rows: 100px 90vh 450px 925px 850px 300px;
+        grid-template-rows: 100vh 450px 925px 850px 300px;
+        grid-template-areas: 
+        "ma"
+        "po"
+        "ev"
+        "ga"
+        "fo";
     }
 
     header {
         background: none;
+        position: absolute;
+        top: 0;
+        border: none;
+        color: white;
     }
 
     header h3 {
         position: absolute;
         left: 0;
-        margin-left: 2
-        0px;
+        margin-left: 25px;
     }
 
     #title {
@@ -606,6 +615,7 @@ a {
         margin: 0;
         justify-content: center;
         align-items: center;
+        background: none;
     }
 
     nav ul {
@@ -618,6 +628,7 @@ a {
         padding: 0;
         margin-left: 55px;
         margin-right: 55px;
+        color: white;
     }
 
     #product-index-3 {
@@ -631,9 +642,10 @@ a {
 
     .event {
         flex-direction: row;
-        background-color: red;
         justify-content: space-between;
         column-gap: 20px;
+        width: 70%;
+        margin-top: 40px;
     }
 
     .event-background-img {
@@ -642,6 +654,64 @@ a {
 
     .event p {
         width: 50%;
+        margin: 0;
+    }
+
+    #text-picture-switched {
+        flex-direction: row-reverse
+    }
+
+    .event-background-img {
+        height: 300px;
+    }
+
+    button {
+        border: 1px solid #EB8E32;
+        background: none;
+        color: #EB8E32;
+        font-size: 1.25rem;
+        font-weight: 400;
+        padding-right: 30px;
+        padding-left: 30px;
+        transition: 0.4s;
+    }
+
+    button:hover {
+        background: #EB8E32;
+        border: none;
+        color: white;
+    }
+
+    button:active {
+        opacity: 50%;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(4, 300px);
+        grid-template-rows: repeat(2, 300px);
+        row-gap: 30px;
+        column-gap: 30px;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #social-media-icons {
+        margin-left: 100px;
+        width: auto;
+        margin-bottom: 0;
+    }
+
+    #footer-links {
+        width: 100%;
+        margin-left: 400px;
+    }
+
+    #footer-links ul li {
+        margin-right: 60px;
     }
 }
 
