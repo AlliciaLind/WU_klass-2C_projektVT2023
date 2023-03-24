@@ -373,6 +373,13 @@ a {
 }
 
 .gallery {
+    grid-area: ga;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-flex-grid {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -382,7 +389,7 @@ a {
     margin-right: 20px;
     margin-left: 20px;
     row-gap: 20px;
-    grid-area: ga;
+    
 }
 
 .gallery h1 {
@@ -472,6 +479,12 @@ a {
 
 .book-event-now-button {
     margin-bottom: 40px;
+}
+
+.event-information-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -574,8 +587,7 @@ a {
         background: none;
         position: absolute;
         top: 0;
-        border: none;
-        color: white;
+        color: black;
     }
 
     header h3 {
@@ -628,6 +640,15 @@ a {
         padding: 0;
         margin-left: 55px;
         margin-right: 55px;
+        color: black;
+    }
+
+    .index-header {
+        color: white;
+        border: none;
+    }
+
+    .index-header li {
         color: white;
     }
 
@@ -678,7 +699,7 @@ a {
 
     button:hover {
         background: #EB8E32;
-        border: none;
+        border-color: #EB8E32;
         color: white;
     }
 
@@ -712,6 +733,72 @@ a {
 
     #footer-links ul li {
         margin-right: 60px;
+    }
+
+
+    /* Event */
+
+    .event-information-section {
+        flex-direction: row;
+        width: 70%;
+        justify-content: space-between;
+        margin-bottom: 70px;
+    }
+
+    #section-switched {
+        flex-direction: row-reverse;
+    }
+
+    .book-events-img {
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .event-information {
+        width: 50%;
+    }
+
+    .offers {
+        border: none;
+    }
+
+    #shop-product-grid {
+        grid-template-columns: repeat(4, 200px);
+        grid-template-rows: repeat(4, 300px);
+    }
+
+    .product-shop {
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        border-top: none;
+        border-radius: 5px;
+        padding-bottom: 30px;
+        padding-top: 27px;
+    }
+
+    .product-shop img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .shop-button {
+        margin-top: 20px;
+    }
+
+
+    /* Gallery */
+
+    .gallery-flex-grid {
+        flex-wrap: wrap;
+        object-fit: cover;
+    }
+
+    .gallery img {
+        height: auto;
+
     }
 }
 
